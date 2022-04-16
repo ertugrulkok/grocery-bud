@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <h4 class="alarm">Enter an item to the list!</h4>
+
+      <h1>Grocery Bud</h1>
+
+      <div class="wrapper">
+        <div id="sol_kart">
+          <form>
+            <input class="list_input"  type="text" id="txtYapilacaklar" placeholder="girilen"/>
+          </form>
+        
+          <ul class="list_yap" id="listeyapilacaklar"></ul>
+     
+        </div>
+
+        <div class="sag_kart">
+          <input class="button_input" type="button" id="btn_ekle" value="Submit" onclick="listeyeEkle();"/>
+        </div>
+      </div>
+
+      <p class="clear_list" id="clear" onclick="hepsini_sil()">Clear List</p>
+      
+
+      <h1 id="sonuc"></h1>
+    </div>
+
+    <script src="app.js"></script>
+
+  
+  </body>
+</html>
